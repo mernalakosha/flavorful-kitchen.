@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <title>Sign Up Form</title>
+    <style>
+        body{
+            margin: 10;
+            padding: 10;
+            font-family: sans-serif;
+            background-image: url(orange.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .signup{
+            width: 400px;
+            box-shadow: 0 0 3px 0 rgb(0,0,0,0.3);
+            background: #fff;
+            padding:20px;
+            margin:8% auto 0;
+            text-align: center;
+        }
+        .signup h1{
+            color:#db7f1c;
+            margin-bottom: 30px;
+        }
+        .signup h4{
+            color:rgb(153, 106, 56);
+
+        }
+       .input{
+        border-radius: 20px;
+        margin:10px 0;
+        width: 90%;
+        border:1px solid #999;
+        outline: none;
+        padding:10px;
+       }
+       button{
+        color: #fff;
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 15px;
+        margin: 10px 0;
+        border:none;
+        outline: none;
+        cursor: pointer;
+       }
+       .signup-butt{
+        background-color: #db800f ;
+       }
+       .a{
+        text-decoration: none;
+       }
+       .hr{
+        margin-top: 20px;
+        width: 80%;
+
+       }
+       .or{
+        background: #fff ;
+        width: 30px;
+        margin: 19px auto 10px ;
+       }
+       
+    </style>
+</head>
+<body>
+
+<div class ="signup">
+    <h1> Sign Up Now</h1>
+    <h4> It is free and only takes a minute </h4>
+    <form action="index.php"  method="post">
+    <label for="fn"> First Name: </label>
+    <input id="fn" class="input"type="text" name="firstname" placeholder="merna" maxlength="30" required ><br>
+    <label for="ln"> Last Name: </label>
+    <input id="ln" class="input" type="text" name="lastname" placeholder="lakosha" maxlength="30" required><br>
+    <label for="female"> Female </label>
+    <input id="female" type="radio" name="gender" value="f" >
+    <label for="male"> Male </label>
+    <input id="male" type="radio" name="gender" value="m"><br>
+    <label for="e">Email: </label>
+    <input id="e" class="input" type="email" name="email" placeholder="merna@gmail.com" maxlength="30" requried><br>
+    <label for="pass">Password:</label>
+    <input id="pass" class="input" type="password" name="password" maxlength="30"  required ><br>
+    
+    <label for="box" > I agree with all conditions </label>
+    <br>
+    <input id="box" type="checkbox" name="check" value="value" checked><br>
+
+    <button type="submit" name="btm" class=" signup-butt"> Sign Up</button>
+    <hr>
+    <p class ="or"> OR</p>
+    <p>Do you have an account ? <a href ="login.html"> login </a></p>
+    </form>
+    </div>
+  
+</body>
